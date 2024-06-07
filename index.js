@@ -10,8 +10,8 @@ const stripe = require("stripe")(process.env.SECRET_KEY_STRIPE);
 app.use(cors());
 app.use(express.json());
 
-app.post("/",(req,res)=>{
-    res.send("AgSpert Task server is running");
+app.get("/",(req,res)=>{
+    res.send("Home Decor server is running");
 })
 
 app.listen(port, (req,res)=>{
